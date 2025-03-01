@@ -83,11 +83,3 @@ function updateTemp() {
         temperature.innerHTML = "The temperature is " + tempC + " °C";
     }
 }
-
-fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/london?key=NB3KFUAAJZ3CXF2ZP7FQ6QFTN', {mode: 'cors'})
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(response) {
-      console.log(response);
-    });
